@@ -5,10 +5,12 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   const Alumno = {
-    imagen: <img src="../public/imagen_perfil.jpg" alt="Imagen de Perfil" />,
+    imagen: "/imagen_perfil.jpg",
     nombre: "Juan Tosi",
     edad: 27,
-    habilidades: ["React", "JavaScript", "HTML", "CSS"],
+    habilidades: ["React", "JavaScript", "C#", "Java"],
+    descripcion:
+      "Soy estudiante de la Tecnicatura Universitaria en Programacion en la UTN - FRT. Actualmente me encuentro cursando el 2° año de la carrera, llevo creados varios proyectos a modo de practica que me ayudan a desarrollar mis habilidades en programacion.",
     redes: {
       instagram: "https://www.instagram.com/juantosi1/",
       facebook: "https://www.facebook.com/juan.tosi.184/",

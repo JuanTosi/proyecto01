@@ -1,26 +1,32 @@
 import React from "react";
+import "../css/footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = (props) => {
   const { redes } = props.datos;
   return (
     <div>
-      <h4>
-        <a href={redes.instagram} target="blank">
-          Instagram
+      <hr />
+      <div className="anclas">
+        <a href={redes.instagram} target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <br />
-        <a href={redes.facebook} target="blank">
-          Facebook
+        <a href={redes.facebook} target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faFacebook} />
         </a>
-        <br />
-        <a href={redes.linkedin} target="blank">
-          Linkedin
+        <a href={redes.linkedin} target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <br />
-        <a href={redes.github} target="blank">
-          GitHub
+        <a href={redes.github} target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faGithub} />
         </a>
-      </h4>
+      </div>
     </div>
   );
 };
